@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'Ingredients',
     'Meals',
     'Orders',
-    'Drinks'
+    'Drinks',
 ]
 
 MIDDLEWARE = [
