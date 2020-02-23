@@ -24,7 +24,8 @@ SECRET_KEY = 'qz9o1n%nnf#5#9gkhz4drb-c@1f&3823z67)swvd225z!3ir+n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'omda.pythonanywhere.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'omda.pythonanywhere.com', '192.168.43.123', '192.168.8.105',
+                 '192.168.8.112']
 
 # Application definition
 
@@ -40,13 +41,14 @@ INSTALLED_APPS = [
     'Meals',
     'Orders',
     'Drinks',
+    'Admins',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
